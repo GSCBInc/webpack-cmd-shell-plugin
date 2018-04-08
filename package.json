@@ -1,0 +1,26 @@
+{
+  "name": "webpack-cmd-shell-plugin",
+  "version": "0.0.0",
+  "description": "Run flexible and configurable shell commands through each step of the webpack build process",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm run tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GSCBInc/webpack-cmd-shell-plugin.git"
+  },
+  "keywords": [
+    "webpack",
+    "cmd",
+    "shell",
+    "commands",
+    "gscb"
+  ],
+  "author": "Chris Thaw <christhaw@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/GSCBInc/webpack-cmd-shell-plugin/issues"
+  },
+  "homepage": "https://github.com/GSCBInc/webpack-cmd-shell-plugin#readme"
+}
