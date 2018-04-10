@@ -2,31 +2,12 @@ const path = require('path');
 const WebpackCmdShellPlugin = require('./lib');
 
 let WebpackCmdShellPluginConfig = new WebpackCmdShellPlugin({
-    beforeCompile: [{
-        command: 'echo',
-        args: ['Webpack', 'is', 'starting', 'compile']
-    }],
-    onMake: [{
-        command: 'echo',
-        args: ['Webpack', 'is', 'compiling']
-    }],
-    afterCompile: [{
-        command: 'echo',
-        args: ['Webpack', 'has', 'finished', 'compiling']
-    }],
-    onEmit: [{
-        command: 'echo',
-        args: ['Webpack', 'is', 'emitting', 'files']
-    }],
-    afterEmit: [{
-        command: 'echo',
-        args: ['Webpack', 'has', 'finished', 'emitting', 'files']
-    }],
-    whenDone: [{
-        command: 'echo',
-        args: ['Webpack', 'has', 'finished', 'building']
-    }],
-
+    beforeCompile: 'echo Webpack is starting compile',
+    onMake: 'echo Webpack is compiling',
+    afterCompile: 'echo Webpack has finished compiling',
+    onEmit: 'echo Webpack is emitting files',
+    afterEmit: 'echo Webpack has finished emitting files',
+    whenDone: 'echo Webpack has finished building',
     verbose: false
 });
 module.exports = function () {
