@@ -1,3 +1,12 @@
 # JetBrains
 # ==============
 .idea/
+
+# Node Modules
+# ==============
+package-lock.json
+node_modules/
+
+# Webpack Files
+# ==============
+dist/

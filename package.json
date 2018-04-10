@@ -4,7 +4,7 @@
   "description": "Run flexible and configurable shell commands through each step of the webpack build process",
   "main": "index.js",
   "scripts": {
-    "test": "echo Running Tests"
+    "test": "webpack"
   },
   "repository": {
     "type": "git",
@@ -22,5 +22,14 @@
   "bugs": {
     "url": "https://github.com/GSCBInc/webpack-cmd-shell-plugin/issues"
   },
-  "homepage": "https://github.com/GSCBInc/webpack-cmd-shell-plugin#readme"
+  "homepage": "https://github.com/GSCBInc/webpack-cmd-shell-plugin#readme",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-es2015-rollup": "^3.0.0",
+    "eslint": "^4.19.1",
+    "lodash": "^4.17.5",
+    "rollup": "^0.57.1",
+    "rollup-plugin-babel": "^3.0.3",
+    "webpack": "^3.5.0"
+  }
 }
