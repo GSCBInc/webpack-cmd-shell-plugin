@@ -2,6 +2,7 @@ const path = require('path');
 const WebpackCmdShellPlugin = require('./lib');
 
 let WebpackCmdShellPluginConfig = new WebpackCmdShellPlugin({
+    beforeStart: 'echo Webpack is starting up',
     beforeCompile: 'echo Webpack is starting compile',
     onMake: 'echo Webpack is compiling',
     afterCompile: 'echo Webpack has finished compiling',
