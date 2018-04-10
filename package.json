@@ -2,7 +2,7 @@
   "name": "webpack-cmd-shell-plugin",
   "version": "0.0.0",
   "description": "Run flexible and configurable shell commands through each step of the webpack build process",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
     "test": "webpack"
   },
