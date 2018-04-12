@@ -8,7 +8,12 @@ let WebpackCmdShellPluginConfig = new WebpackCmdShellPlugin({
     afterCompile: 'echo Webpack has finished compiling',
     onEmit: 'echo Webpack is emitting files',
     afterEmit: 'echo Webpack has finished emitting files',
-    whenDone: 'echo Webpack has finished building',
+    whenDone: [
+        'echo Attempting to run npm version patch next',
+        'npm version patch --no-git-tag-version',
+        'echo Webpack has finished building'
+    ],
+    enforceOrder: true,
     verbose: false
 });
 module.exports = function () {
